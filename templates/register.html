@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}register{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container">
+        <h1>TODO新規登録</h1>
+        <form method = "post">
+            <ul>
+                <li>
+                    <laebl for = "title">タイトル</laebl>
+                    <input type = "text" name="title">
+                </li>
+                <li>
+                    <label for = "body">内容</label>
+                    <input type="text" name="body">
+                </li>
+                <li>
+                    <label for = "duedate">期日</label>
+                    <input type="datetime" name = "duedate">
+                </li>  
+            <input type="submit" value="新規登録">
+            </ul>
+        </form>
+    </div>
+</body>
+
+{% endblock %}
